@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: "Doto", sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+    transition: 0.5s ease;
+    padding: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+body {
+    position: relative;
+}
+
+.One_container {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.display_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    z-index: 10214220;
+    position: fixed;
+}
+
+.in_header {
+    width: 80%;
+    height: 80px;
+    padding: 0px 50px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    transition: 0.3s ease-in;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.in_header:hover {
+    width: 90%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50px;
+
+}
+
+.logo {
+    gap: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.logo span {
+    color: blue;
+}
+
+
+.head_elements {
+    gap: 50px;
+}
+
+.head_elements a {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.head_elements a:hover {
+    font-size: 20px;
+}
+
+.getsarted_head {
+    width: 70px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: blue;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.getsarted_head:hover {
+    width: 100px;
+    background-color: blue;
+    color: #fff;
+}
+
+.getsarted_head:nth-child(2) {
+    width: 120px;
+    background-color: blue;
+    color: #fff;
+}
+
+.getsarted_head:nth-child(2):hover {
+    width: 140px;
+    background: none;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.Home_Ai {
+    position: absolute;
+    margin-top: -650px;
+    z-index: 1;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.Home_Ai h1 span {
+    color: blue;
+}
+
+.Home_Ai p {
+    font-weight: 800;
+}
+
+@keyframes example {
+    0% {
+        margin-left: 100px;
+    }
+
+    50% {
+        margin-left: 150px;
+    }
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_1 {
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    color: white;
+    z-index: 4;
+    padding: 50px;
+    gap: 100px;
+}
+
+.section_1_main_1 {
+    width: 100%;
+    flex: 1;
+    color: white;
+    align-items: start;
+    flex-direction: column-reverse;
+    gap: 13px;
+    z-index: 5;
+    padding: 10px 100px;
+    font-size: 40px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+
+    /* From https://css.glass */
+    background: rgba(103, 103, 103, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section_1_main_1:hover {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.section_1_main_2 {
+    width: 100%;
+    flex: 1;
+    z-index: 13;
+    display: flex;
+    gap: 50px;
+}
+
+.section_1_main_2_about_head,
+.section_1_main_2_about_main {
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+
+.section_1_main_2_about_main {
+    height: 100%;
+    gap: 20px;
+    font-size: 30px;
+    /* From https://css.glass */
+    background: rgba(126, 126, 126, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.section_1_main_2_about_main:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.section_1_main_2_about_main button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color: wheat;
+    background: none;
+    border: 1px solid white;
+    transition: 0.5s ease;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section_1_main_2_about_main button:hover {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.604);
+    color: black;
+}
+
+.AI_2,
+.AI_3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.our_cilent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 100px;
+    padding: 100px;
+    z-index: 14;
+}
+
+.our_cilent_head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our_cilent_head span {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.our_cilent_head p {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.our_cilent_head h1 {
+    color: var(--text-color-2);
+    font-size: 40px;
+}
+
+.our_cilent_main {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 340px;
+    padding: 20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.profile-pic {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    font-weight: bold;
+}
+
+.profession {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    font-size:15px;
+    font-weight: 20px;
+    margin: 10px 0 15px;
+    padding: 0 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 25px;
+    color: #ffb400;
+}
+
+.star {
+    color: #ffffff;
+    /* Default color for empty stars */
+}
+
+.star.filled {
+    color: #ffb400;
+    /* Color for filled stars */
+}
+
+.main_img_cards {
+
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s ease;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
+
+
+.main_img_cards:hover {
+    backdrop-filter: blur(0px);
+    margin-top: -29px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
